@@ -67,12 +67,12 @@ public class PlayerObject implements PlayingEntity {
 
     @Override
     public void win() {
-        System.out.println("ÏÈÊÖÓ®");
+        System.out.println("å…ˆæ‰‹èµ¢");
     }
 
     @Override
     public void lose() {
-        System.out.println("ÏÈÊÖÊä");
+        System.out.println("å…ˆæ‰‹è¾“");
     }
 
     @Override

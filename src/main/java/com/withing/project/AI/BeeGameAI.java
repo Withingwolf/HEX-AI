@@ -623,12 +623,12 @@ public class BeeGameAI implements PlayingEntity {
 
     @Override
     public void win() {
-        System.out.println("ºóÊÖÓ®");
+        System.out.println("åæ‰‹èµ¢");
     }
 
     @Override
     public void lose() {
-        System.out.println("ºóÊÖÊä");
+        System.out.println("åæ‰‹è¾“");
     }
 
     @Override

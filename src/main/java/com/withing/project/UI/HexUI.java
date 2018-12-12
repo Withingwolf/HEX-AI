@@ -45,7 +45,7 @@ public class HexUI {
         panel.setLayout(null);
         for (int i = 0; i < SIDE; i++) {
             for (int j = 0; j < SIDE; j++) {
-//				setBounds(×ø±êx£¬×ø±êy£¬¾ØÐÎ³¤£¬¾ØÐÎ¿í)jÎªºáÏò¼ÆÊý£¬iÎª×ÝÏò¼ÆÊý
+//				setBounds(åæ ‡xï¼Œåæ ‡yï¼ŒçŸ©å½¢é•¿ï¼ŒçŸ©å½¢å®½)jä¸ºæ¨ªå‘è®¡æ•°ï¼Œiä¸ºçºµå‘è®¡æ•°
                 gamePiece[i][j].setBounds(30 + 38 * j + 19 * i, 30 + 34 * i, 34, 40);
                 panel.add(gamePiece[i][j]);
             }
@@ -72,10 +72,10 @@ public class HexUI {
             text2[i].setBounds(10 + 19 * i, 30 + 34 * i, 34, 40);
             panel.add(text2[i]);
         }
-        //²Ëµ¥***************************************
+        //èœå•***************************************
         menuBar = new JMenuBar();
-        JMenu Operate = new JMenu("²Ù×÷");
-        JMenuItem buildTree = new JMenuItem("ºóÊÖ");
+        JMenu Operate = new JMenu("æ“ä½œ");
+        JMenuItem buildTree = new JMenuItem("åŽæ‰‹");
         buildTree.addActionListener(new Menu(this));
         Operate.add(buildTree);
         menuBar.add(Operate);
@@ -112,7 +112,7 @@ public class HexUI {
             if (!checkForWinner()) {
                 GameAction.getPlayer((currentPlayer % 2) + 1, this);
                 if (GameAction.getPlayer(currentPlayer, this) == null) {
-                    System.out.println("Îª¿Õ");
+                    System.out.println("ä¸ºç©º");
                 }
                 GameAction.getPlayer(currentPlayer, this).getPlayerTurn();
             }
